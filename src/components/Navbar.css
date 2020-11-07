@@ -1,0 +1,52 @@
+.navbar {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 111;
+}
+.nav-item {
+  padding: 5px 10px;
+  width: 120px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.nav-link {
+  color: #fcfcfc !important;
+  border: 1px solid #fcfcfc;
+  transition: 0.5s ease all !important;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+.nav-link:hover {
+  background-color: #fcfcfc;
+  color: black !important;
+}
+.active :first-child {
+  color: black !important;
+  background-color: white;
+}
+.logo {
+  width: 130px;
+}
+@media only screen and (max-width: 500px) {
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+  .logo {
+    width: 70px;
+  }
+  .navbar {
+    width: 70%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+  }
+}

@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Aboutus from "./components/Aboutus";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
+import Home from "./components/Home";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Home fadeleft={"fade-left"} faderight={"fade-right"} />
+      <Gallery fadeup={"fade-up"} />
+      <Aboutus fadeleft={"fade-left"} faderight={"fade-right"} />
+      <Contact />
+      <Footer />
     </div>
   );
 }

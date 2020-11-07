@@ -1,0 +1,75 @@
+#contact {
+  /* height: 100vh; */
+  background-color: var(--primary);
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__input {
+  width: 500px !important;
+  margin: 25px auto !important;
+  padding-bottom: 25px !important;
+}
+.contact__inputDiv {
+  display: flex;
+  align-items: center;
+}
+.contact__icon {
+  font-size: 34px;
+  margin-right: 10px;
+  /* color: rgb(196, 196, 196); */
+  color: var(--dark);
+}
+.contact__title {
+  /* color: rgb(172, 29, 29); */
+  color: var(--dark);
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+.underline2 {
+  width: 250px;
+  border-bottom: 2px solid var(--dark);
+}
+.MuiInput-underline:after {
+  /* border-bottom: 2px solid rgb(196, 196, 196) !important; */
+  border-bottom: 2px solid var(--gray-dark) !important;
+}
+.MuiInput-underline:before {
+  /* border-bottom: 2px solid rgb(163, 163, 163) !important; */
+  border-bottom: 2px solid var(--gray-dark) !important;
+}
+.MuiFormLabel-root {
+  /* color: rgb(196, 196, 196) !important; */
+  color: var(--gray-dark) !important;
+}
+.form-control {
+  width: 544px;
+}
+.form-group {
+  text-align: center;
+}
+.contact__btn {
+  width: 100%;
+  margin-top: 25px;
+}
+@media only screen and (max-width: 500px) {
+  .contact__input {
+    width: 300px !important;
+    margin: 25px auto !important;
+    padding-bottom: 25px !important;
+  }
+  #exampleFormControlTextarea1 {
+    width: 350px;
+  }
+  #contact {
+    padding-top: 75px;
+  }
+}
