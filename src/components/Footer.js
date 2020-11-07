@@ -20,17 +20,17 @@ function Footer() {
           <div className="col-12 col-sm-6 footer__links">
             <ul className="footer__ul">
               <li>
-                <a href="#">
+                <a href="https://github.com/yildirimsamet">
                   Instagram <FaInstagram />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://github.com/yildirimsamet">
                   Twitter <FiTwitter />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://github.com/yildirimsamet">
                   Facebook <FaFacebookSquare />
                 </a>
               </li>
